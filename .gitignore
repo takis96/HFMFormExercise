@@ -3,4 +3,4 @@
 /storage/database/*.sqlite-*
 /.idea/
 /.vscode/
-
+composer.lock
