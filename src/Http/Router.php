@@ -33,7 +33,7 @@ final class Router
             return;
         }
 
-        // A known URL used with the wrong HTTP verb is a 405, not a 404.
+        // A known URL used with the wrong HTTP verb.
         if ($this->pathExists($path)) {
             http_response_code(405);
             header('Allow: ' . implode(', ', $this->methodsFor($path)));

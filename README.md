@@ -1,6 +1,5 @@
 # HFM Registration and Login
 
-A small PHP 8.4 application built for the HFM back-end exercise. It provides responsive registration and login pages backed by SQLite.
 
 ## Features
 
@@ -38,7 +37,6 @@ The built-in PHP server is intended for local development. Stop it with Ctrl+C.
 
 ## Installing the requirements on Ubuntu 24.04 / WSL (this is the setup I am using)
 
-Ubuntu 24.04 provides PHP 8.3 by default, so this project uses the maintained PHP package repository for PHP 8.4:
 
 ~~~bash
 sudo apt update
@@ -58,7 +56,7 @@ sudo apt install -y \
   unzip
 ~~~
 
-If you want,you can verify the installation:
+If you want, you can verify the installation:
 
 ~~~bash
 php --version

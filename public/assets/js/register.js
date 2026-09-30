@@ -34,7 +34,7 @@
 
     const elementFor = (name) => form.elements.namedItem(name);
 
-    // Keep these messages aligned with RegistrationValidator on the server.
+    // Our messages are aligned with RegistrationValidator on the server.
     const messageFor = (name) => {
         const element = elementFor(name);
         const value = element.type === 'checkbox'
@@ -169,7 +169,7 @@
         summary.hidden = summaryList.children.length === 0;
     };
 
-    // CSS draws the plus sign; the input itself contains only the numeric calling code.
+    // We draw the plus sign withCSS. The input itself contains only the numeric calling code.
     country.addEventListener('change', () => {
         countryCode.value = countryCodes[country.value] ?? '';
         validateField('country');

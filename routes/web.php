@@ -34,7 +34,6 @@ $auth = new AuthController(
     $csrf,
 );
 
-// GET routes for displaying pages obviously and POST routes for actions that change state.
 $router->get('/', static function (): void {
     header('Location: /register', true, 302);
 });
